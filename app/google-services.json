@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "25873687090",
+    "project_id": "dengeli-yasam",
+    "storage_bucket": "dengeli-yasam.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:25873687090:android:40a5f033cf85f39718922b",
+        "android_client_info": {
+          "package_name": "com.example.dengeliyasam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "25873687090-voscoo26qt730lm7o5mf4ku63f37mref.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9OgoUZXokBsMMiCmmByouaYYZDymhTN4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "25873687090-voscoo26qt730lm7o5mf4ku63f37mref.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

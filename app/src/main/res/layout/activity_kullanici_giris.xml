@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.KullaniciGirisActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:text="Kullanıcı Girişi"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="40dp"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="350dp"
+        android:layout_gravity="center"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="E-Mail :"
+            android:layout_weight="1"
+            android:layout_width="0dp" />
+        <EditText
+            android:hint="johndoe@test.com"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:id="@+id/email"
+            android:inputType="textEmailAddress" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="350dp"
+        android:layout_gravity="center"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Şifre :"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            />
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:inputType="textPassword"
+            android:id="@+id/password"
+            android:layout_width="0dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Hesap oluştur"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginRight="30dp"
+        android:layout_gravity="right"
+        android:id="@+id/uyeOl"
+        />
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:text="Giriş"
+        android:id="@+id/giris"
+        />
+
+</LinearLayout>

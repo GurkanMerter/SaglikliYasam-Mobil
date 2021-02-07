@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.KullaniciUyelik">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kullanıcı Üyelik"
+        android:textSize="50sp"
+        android:layout_gravity="center"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="350dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Adınız :"
+            android:layout_weight="1"
+            android:layout_width="0dp" />
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:id="@+id/ad"
+            android:inputType="textCapSentences" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="350dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Soyadınız :"
+            android:layout_weight="1"
+            android:layout_width="0dp" />
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:id="@+id/soyad"
+            android:inputType="textCapCharacters" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="350dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="E-Mail :"
+            android:layout_weight="1"
+            android:layout_width="0dp" />
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:id="@+id/email"
+            android:inputType="textEmailAddress" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="350dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Şifre :"
+            android:layout_weight="1"
+            android:layout_width="0dp" />
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:id="@+id/sifre"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="350dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/cinsiyetk"
+                android:text="Kadın"
+                />
+            <RadioButton
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/cinsiyete"
+                android:text="Erkek"
+                />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="350dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_height="35dp"
+            android:textSize="18sp"
+            android:text="Doğum Tarihi :"
+            android:layout_weight="3"
+            android:layout_width="0dp" />
+        <TextView
+            android:id="@+id/dateTxt"
+            android:layout_weight="4"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:textSize="20sp"
+            android:text="" />
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:id="@+id/date_picker"
+            android:background="@drawable/date_picker_icon"
+            android:contentDescription="Date"
+            android:focusable="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="350dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Boy:"
+            android:layout_weight="1"
+            android:layout_width="0dp" />
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:id="@+id/boy"
+            android:inputType="number" />
+        <TextView
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Kilo :"
+            android:layout_weight="1"
+            android:layout_width="0dp" />
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:id="@+id/kilo"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="350dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Aktiflik Düzeyi :"
+            android:layout_weight="1"
+            android:layout_width="0dp" />
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/aktiflik"
+            />
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="gönder"
+        android:id="@+id/submit_button"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        />
+
+</LinearLayout>
